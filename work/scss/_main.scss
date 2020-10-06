@@ -1,0 +1,291 @@
+.site {
+    padding: $spacer;
+    font-family: lato, sans-serif;
+    background-image: url(https://assets-global.website-files.com/5d657603495993f5656df5ed/5f735e1648be19248fea0d38_background-hero.jpg);
+    background-size: 200%;
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+}
+
+div.entry-meta,
+footer.entry-footer {
+    color: #00000000;
+    a {
+        color: #00000000;
+    }
+}
+
+.article-header1 img {
+    width: 500%;
+    max-width: 100%;
+}
+
+.articles-header {
+    max-width: 1480px;
+}
+
+h1.entry-title {
+    display: none;
+}
+
+.site-header {
+    display: flex;
+    flex-direction: column; // logo
+    .site-title {
+        font-size: 16px;
+        margin: 0;
+        a {
+            color: $font-color;
+            text-decoration: none;
+            font-weight: 600;
+        }
+    }
+    .main-navigation {
+        margin-top: -40px; // links i menu
+        a {
+            float: left;
+            text-align: center;
+            color: $font-color;
+            font-weight: 400;
+            font-size: 19.2px;
+            padding: 20px;
+        }
+        li {
+            display: inline-block;
+        }
+        a:hover {
+            text-decoration: underline;
+        } // hamburger-knappen
+        .menu-toggle {
+            padding: 0;
+            border: none;
+            background-color: white;
+            float: right;
+            flex-direction: column;
+        }
+        .menu {
+            align-self: flex-start;
+            .nav-menu {
+                margin-top: $spacer*2;
+            }
+        }
+    }
+}
+
+img.custom-logo {
+    max-width: 60%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#respond.comment-respond {
+    display: none;
+}
+
+strong {
+    font-size: 30px;
+    font-weight: 1000;
+}
+
+div.entry-meta,
+footer.entry-footer {
+    display: block;
+}
+
+p,
+figure,
+h1 {
+    max-width: 1580px !important;
+}
+
+// indholdet centreret på siden 
+.entry-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// "standardbredden" for content
+p,
+figure,
+h1 {
+    max-width: 700px;
+}
+
+// klasse til billeder, der skal have fuld bredde
+.img-wide {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+    .site-header {
+        flex-direction: row;
+        .main-navigation {
+            display: flex;
+            justify-content: flex-end;
+            .menu-menu-1-container {
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+                .menu-item {
+                    margin-left: $spacer;
+                }
+            }
+        }
+    } // fordeler én paragraf i flere kolonner 
+    .p-columns-2 {
+        column-count: 3;
+    }
+    footer {
+        max-width: 100%;
+        margin: 0 auto;
+        background-image: url(https://assets-global.website-files.com/5d657603495993f5656df5ed/5f735feb73acdd7fd7eff6df_background-footer.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        p a {
+            padding: 0px 15px 15px 0px;
+        }
+        .brain {
+            text-decoration: none;
+            color: #333333;
+            font-weight: 400;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 15px !important;
+        }
+        h3 {
+            text-align: center;
+            margin-top: 0 !important;
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+    form {
+        max-width: 1280px;
+        margin-left: 100px;
+        margin-bottom: 10em;
+        input,
+        textarea,
+        input[type="email"] {
+            max-width: 100%;
+            width: 250px;
+            margin-top: 1em;
+            resize: none;
+            margin-left: 30px;
+            border: 1px solid #cfcdcd;
+            border-radius: 4px;
+            padding: 10px;
+        }
+        button[type="submit"] {
+            width: 250px;
+            padding: 13px;
+            background-color: rgb(209, 9, 9);
+            color: white;
+            font-weight: 400;
+            font-size: 24px;
+            margin-left: 30px;
+        }
+        .wp-block-search__button {
+            width: 150px !important;
+            padding: 2px !important;
+            background-color: rgb(224, 223, 223) !important;
+            color: rgb(151, 150, 150) !important;
+            font-weight: 400;
+            font-size: 24px;
+            margin-left: 30px;
+            border: none;
+            margin-right: 0px !important;
+            height: 40px;
+            margin-top: 40px !important;
+        }
+        .wp-block-search__input {
+            width: 300px !important;
+            margin-left: 0px !important;
+            margin-top: 40px !important;
+            padding: 5px !important;
+            height: 40px;
+        }
+        div.search {
+            margin-top: 100em;
+            height:  !important;
+        }
+    }
+    footer p {
+        font-size: 14px !important;
+        text-align: center;
+        padding: 0px !important;
+        margin: 0 auto;
+    }
+    strong {
+        font-size: 60px;
+    }
+    .marg {
+        margin-top: 10em;
+    }
+    .marg1 {
+        margin-top: 4em;
+    }
+    .marg2 {
+        margin-top: 3em;
+    }
+    .margb {
+        margin-bottom: 3em;
+    }
+    .sponsor {
+        width: 1280px;
+    }
+    figure.picartic {
+        width: 1280px;
+        img {
+            width: 100px;
+            margin: 0px !important;
+        }
+    }
+    p {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 38px;
+        color: #333333;
+        padding-right: 30px;
+        a {
+            color: rgb(209, 9, 9);
+            font-weight: bold;
+        }
+        a:visited {
+            color: rgb(209, 9, 9);
+        }
+    }
+    h2 {
+        font-weight: 900;
+        font-size: 48px;
+    }
+    h3 {
+        font-weight: 900;
+        font-size: 48px;
+        margin: 0 !important;
+    }
+}
+
+// stopklods
+@media screen and (min-width: 1280px) {
+    .site-main {
+        max-width: 1280px;
+        margin: 0 auto;
+        .column {
+            float: left;
+            max-width: 50%;
+        }
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    }
+}
